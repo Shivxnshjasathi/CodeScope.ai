@@ -6,7 +6,6 @@ import json
 import plotly.graph_objects as go
 from streamlit_ace import st_ace
 from streamlit_option_menu import option_menu
-from streamlit_particles import particles
 import extra_streamlit_components as stx
 
 # Configure the Gemini API
@@ -124,9 +123,6 @@ def main():
     </style>
     """, unsafe_allow_html=True)
 
-    # Particles background
-   
-
     # Header
     col1, col2 = st.columns([2, 1])
     with col1:
@@ -240,21 +236,4 @@ def main():
         st.markdown("---")
         st.subheader("About")
         st.info(
-            "Code Analyzer Pro uses cutting-edge AI to perform an in-depth dry run analysis of your Python code. "
-            "Get insights into execution flow, variable changes, and potential optimizations."
-        )
-        st.markdown("---")
-        st.subheader("Latest Updates")
-        st.success("✨ New feature: Interactive particle background\n🔧 Improved error detection\n📊 Enhanced visualization of results")
-        
-    if 'analysis_done' in st.session_state and st.session_state.analysis_done:
-        st.sidebar.markdown("---")
-        st.sidebar.download_button(
-            label="📥 Download Analysis Report",
-            data=st.session_state.result,
-            file_name="code_analysis_report.txt",
-            mime="text/plain"
-        )
-
-if __name__ == "__main__":
-    main()
+            "Code Analyzer Pro uses cutting-edge AI to perform an in-depth dry run analysis of your Python
