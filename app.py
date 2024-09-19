@@ -125,21 +125,7 @@ def main():
     """, unsafe_allow_html=True)
 
     # Particles background
-    particles(
-        options={
-            "particles": {
-                "number": {"value": 50},
-                "color": {"value": "#ffffff"},
-                "shape": {"type": "circle"},
-                "opacity": {"value": 0.5, "random": True},
-                "size": {"value": 3, "random": True},
-                "move": {"enable": True, "speed": 1},
-            },
-            "interactivity": {
-                "events": {"onhover": {"enable": True, "mode": "repulse"}},
-            },
-        },
-    )
+   
 
     # Header
     col1, col2 = st.columns([2, 1])
