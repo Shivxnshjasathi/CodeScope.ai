@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 import extra_streamlit_components as stx
 
 # Configure the Gemini API
-genai.configure(api_key='YOUR_API_KEY_HERE')
+genai.configure(api_key='AIzaSyBGwV0hwIhXw8OdeGBX8PyMbEepxLXeP9k')
 
 def load_lottie_url(url: str):
     r = requests.get(url)
