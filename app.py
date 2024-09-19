@@ -235,7 +235,7 @@ def main():
         st.title("📚 Code Analyzer Pro")
         st.markdown("---")
         st.subheader("About")
-         st.info(
+        st.info(
             "Code Analyzer Pro uses cutting-edge AI to perform an in-depth dry run analysis of your Python code. "
             "Get insights into execution flow, variable changes, and potential optimizations."
         )
