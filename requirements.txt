@@ -4,3 +4,6 @@ streamlit-lottie
 requests
 plotly
 streamlit-ace
+streamlit-option-menu
+streamlit-particles
+extra-streamlit-components
