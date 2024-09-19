@@ -235,5 +235,22 @@ def main():
         st.title("📚 Code Analyzer Pro")
         st.markdown("---")
         st.subheader("About")
-        st.info(
-            "Code Analyzer Pro uses cutting-edge AI to perform an in-depth dry run analysis of your Python
+         st.info(
+            "Code Analyzer Pro uses cutting-edge AI to perform an in-depth dry run analysis of your Python code. "
+            "Get insights into execution flow, variable changes, and potential optimizations."
+        )
+        st.markdown("---")
+        st.subheader("Latest Updates")
+        st.success("✨ New feature: Interactive particle background\n🔧 Improved error detection\n📊 Enhanced visualization of results")
+        
+    if 'analysis_done' in st.session_state and st.session_state.analysis_done:
+        st.sidebar.markdown("---")
+        st.sidebar.download_button(
+            label="📥 Download Analysis Report",
+            data=st.session_state.result,
+            file_name="code_analysis_report.txt",
+            mime="text/plain"
+        )
+
+if __name__ == "__main__":
+    main()
